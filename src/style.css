@@ -148,7 +148,7 @@ img {
   .search-form input {
     width: calc(100% - 40px);
     margin-right: 20px;
-    color: #ffffff;
+    color: #ab2222;
   }
 
   .search-form button {
