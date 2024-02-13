@@ -22,6 +22,7 @@ img {
   display: block;
   max-width: 100%;
 }
+
 .search-form {
   position: fixed;
   width: 100vw;
@@ -56,7 +57,7 @@ img {
   font-size: 20px;
   cursor: pointer;
   padding: 8px 20px 10px 20px;
-  background-color: rgba(116, 116, 122, 0.904);
+  background-color: rgba(101, 101, 109, 0.904);
   border-radius: 50px;
   margin-left: -100px;
   border: 1px;
@@ -66,7 +67,7 @@ img {
 }
 
 .search-form button:hover {
-  background-color: rgb(72, 72, 80);
+  background-color: rgb(149, 149, 149);
 }
 
 .gallery {
@@ -131,4 +132,26 @@ img {
 
 .load-more:hover {
   background-color: rgb(72, 72, 80);
+}
+
+@media screen and (max-width: 480px) {
+  .search-form {
+    height: auto;
+  }
+
+  .search-container {
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items: baseline;
+  }
+
+  .search-form input {
+    width: calc(100% - 40px);
+    margin-right: 20px;
+  }
+
+  .search-form button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
 }
